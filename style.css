@@ -1,0 +1,88 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+  background-color: #000;
+  /* color: #fff; */
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  width: 90%;
+  margin: 0px auto;
+}
+
+/* Social Link*/
+/* .social-link {
+  width: 100%;
+  background: #222222;
+  border-bottom: 2px solid #505050;
+  border-top: 2px solid #505050;
+  color: #fff;
+} */
+
+/* Navbar CSS */
+.navbar {
+  background: #17254e;
+  box-shadow: 0px 0px 4px 0px #2b2a2a;
+  padding: 20px 0px;
+  width: 100%;
+  position: fixed;
+}
+.navbar-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  width: 30%;
+}
+.logo a {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+.logo p {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+}
+.logo img {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
+.nav-menu > li {
+  display: inline-block;
+  margin-right: 25px;
+}
+
+.nav-menu > li > a {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.nav-menu > li > a:hover {
+  border-bottom: 2px solid tomato;
+}
+
+.social-link > li {
+  display: inline-block;
+}
+.social-link > li > a > img {
+  height: 30px;
+  width: 30px;
+  margin-right: 20px;
+}
+.social-link > li > a:hover > img {
+  transform: rotate(360deg);
+  transition: 850ms;
+}
