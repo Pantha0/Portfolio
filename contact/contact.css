@@ -168,131 +168,42 @@ a {
   transition: 850ms;
 }
 
-/* Hero Section */
-.hero-section {
+/* Contact */
+.contact {
+  margin-top: 80px;
   padding: 30px 0px;
-  margin-top: 90px;
-  background: #e9e8e8;
-}
-
-.hero-section-box {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
-.hero-section-left {
-  padding: 20px 0px;
-  padding-right: 40px !important;
+.contact-box {
+  width: 80%;
 }
-.hero-section-left > p {
+.contact-box > p {
   margin-top: 10px;
-  margin-bottom: 30px;
+  color: #2b2a2a;
 }
-.hero-section-left > a {
-  padding: 5px 16px;
-  /* cursor: pointer; */
-  font-weight: 400;
-  font-family: "Nunito Sans";
-  border: 0.5px solid #000;
-  color: #000;
-  border-radius: 10px;
-}
-.hero-section-left > a:hover {
-  border-radius: 0px;
-}
-.hero-section-right > img {
-  height: 200px;
-}
-
-/* Education Section */
-.education {
-  padding: 20px 0px;
-}
-.education-box > h3 {
-  text-align: center;
-}
-.education-box > p {
-  text-align: center;
-}
-.education-box-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 20px;
-}
-.education-box-content {
-  background: #e9e8e8;
-  padding: 10px 20px;
-  border-radius: 10px;
-  line-height: 40px;
-  width: 29%;
-  min-height: 190px;
-  text-align: center;
-}
-.education-box-content > img {
-  height: 40px;
-  margin: 10px auto;
-  display: block;
-  /* margin-bottom: 10px !important; */
-}
-.education-box-content > h4 {
-  line-height: 25px;
-}
-
-/* Portfolio Section */
-.portfolio {
-  padding: 20px 0px;
-}
-.portfolio-box > h3 {
-  text-align: center;
-}
-.portfolio-box > p {
-  text-align: center;
-}
-.portfolio-box-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 20px;
-}
-.portfolio-box-content {
-  background: #e9e8e8;
-  padding: 10px 20px;
-  border-radius: 10px;
-  line-height: 40px;
-  width: 29%;
-  min-height: 190px;
-}
-.portfolio-box-content > img {
-  height: 200px;
+form > div {
   width: 100%;
-  /* margin: 0px auto; */
+  margin-top: 20px;
+}
+form > div > p {
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+form > div > input {
+  width: 100%;
+  padding: 10px 4px;
+}
+form > div > input::placeholder {
+  font-size: 16px;
+}
+form > div > button {
+  margin: 0px auto;
   display: block;
-  margin-bottom: 10px !important;
-}
-.portfolio-box-content > h4 {
-  line-height: 25px;
-}
-.portfolio-box-content > p {
-  line-height: 25px;
-  margin-top: 10px;
-}
-.portfolio-box-content > button {
-  padding: 5px 16px;
+  padding: 8px 36px;
   cursor: pointer;
-  font-weight: 400;
-  font-family: "Nunito Sans";
-  border: 0.5px solid #000;
-  color: #000;
-  border-radius: 10px;
-}
-.show-more {
-  padding: 6px 15px;
-  text-align: center;
-  width: 140px;
-  display: block;
-  margin: 20px auto;
+  border-radius: 20px;
   border: 1px solid #000;
-  color: #000;
 }
 /* Footer CSS */
 .footer {
