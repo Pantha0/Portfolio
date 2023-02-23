@@ -5,7 +5,8 @@
 body {
   box-sizing: border-box;
   font-family: "Nunito Sans", sans-serif;
-  background-color: #000;
+  background: #bdbcbc;
+
   /* color: #fff; */
 }
 li {
@@ -14,27 +15,100 @@ li {
 a {
   text-decoration: none;
 }
+
+::-webkit-scrollbar {
+  width: 6px;
+  /* padding: 0px 10px; */
+  z-index: 111111111;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: none;
+  border-radius: 5px;
+}
 .container {
   width: 90%;
   margin: 0px auto;
 }
 
-/* Social Link*/
-/* .social-link {
-  width: 100%;
-  background: #222222;
-  border-bottom: 2px solid #505050;
-  border-top: 2px solid #505050;
-  color: #fff;
-} */
+.body {
+  display: flex;
+  justify-content: space-between;
+}
+.sidebar {
+  width: 20%;
+  background: #f3f3f3;
+  height: 100vh;
+  /* position: fixed; */
+  top: 0px;
+  left: 0px;
+  overflow-y: auto;
+  box-shadow: 0px 0px 15px 0px #a5a5a5;
+  margin-right: 8px;
+}
+.content {
+  width: 80%;
+  /* position: relative; */
+  /* background: #17254e; */
+  overflow-y: auto;
+  height: 100vh;
+}
 
+/* Sidebar CSS */
+.sidebar-logo {
+  text-align: center;
+}
+.sidebar-logo > img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+.sidebar-logo > h3 {
+  font-size: 18px;
+}
+.sidebar-logo > p {
+  font-size: 13px;
+}
+.sidebar > div {
+  margin-top: 15px;
+  border-bottom: 1px solid #cecece;
+  padding: 10px;
+}
+.sidebar > div > li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  font-weight: 600;
+}
+.sidebar > div > li > span {
+  font-weight: 400 !important;
+  color: rgb(0, 75, 85);
+}
+.sidebar > div > button {
+  width: 100%;
+  padding: 6px 0px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.sidebar > div > button:hover {
+  background-color: rgb(0, 255, 221);
+}
 /* Navbar CSS */
 .navbar {
-  background: #17254e;
-  box-shadow: 0px 0px 4px 0px #2b2a2a;
+  background: #e9e8e8;
+  box-shadow: 5px 0px 4px 0px #2b2a2a;
   padding: 20px 0px;
-  width: 100%;
+  width: 80%;
   position: fixed;
+  color: #000;
+  z-index: 11111111;
 }
 .navbar-box {
   display: flex;
@@ -47,7 +121,7 @@ a {
 .logo a {
   display: flex;
   align-items: center;
-  color: #ffffff;
+  color: #000;
 }
 .logo p {
   font-size: 20px;
@@ -67,13 +141,16 @@ a {
 .nav-menu > li > a {
   font-size: 16px;
   font-weight: 600;
-  color: #ffffff;
+  color: #000;
 }
 
 .nav-menu > li > a:hover {
   border-bottom: 2px solid tomato;
 }
 
+.social-link {
+  margin-top: 5px;
+}
 .social-link > li {
   display: inline-block;
 }
@@ -85,4 +162,47 @@ a {
 .social-link > li > a:hover > img {
   transform: rotate(360deg);
   transition: 850ms;
+}
+
+/* Hero Section */
+.hero-section {
+  padding: 30px 0px;
+  margin-top: 90px;
+  background: #e9e8e8;
+}
+.hero-section-box {
+  display: flex;
+  justify-content: space-between;
+}
+.hero-section-left {
+  padding: 20px 0px;
+  padding-right: 40px !important;
+}
+.hero-section-left > p {
+  margin-top: 10px;
+}
+.hero-section-left > button {
+  margin-top: 20px;
+  padding: 6px 16px;
+  cursor: pointer;
+  font-weight: 400;
+  font-family: "Nunito Sans";
+}
+.hero-section-right > img {
+  height: 200px;
+}
+
+@media screen and (max-width: 1200px) {
+  .sidebar {
+    width: 27%;
+  }
+  .content {
+    width: 73%;
+  }
+  .navbar {
+    width: 73%;
+  }
+  .social-link {
+    display: none;
+  }
 }
